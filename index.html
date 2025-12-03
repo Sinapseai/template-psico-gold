@@ -378,3 +378,169 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicologia Clínica | Agende sua Sessão</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-bg': '#FDFBF7', // Fundo Creme Elegante
+                        'brand-primary': '#C5A47E', // Dourado Suave
+                        'brand-text': '#333333',
+                        'brand-light': '#8C8C8C'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-bg text-brand-text antialiased">
+
+    <header class="w-full py-6 px-6 md:px-12 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-2xl font-serif font-bold tracking-wide">Dra. [Nome Sobrenome]</div>
+        <button onclick="Calendly.initPopupWidget({ url: 'https://calendly.com/sinapse-ai-co/30min' }); return false;" 
+                class="hidden md:block border border-brand-text px-6 py-2 rounded-full hover:bg-brand-text hover:text-white transition duration-300 uppercase text-xs tracking-widest">
+            Agendar Consulta
+        </button>
+    </header>
+
+    <section class="px-6 py-12 md:py-20 max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+        <div class="md:w-1/2 space-y-6">
+            <h1 class="text-4xl md:text-6xl font-serif font-bold leading-tight">
+                Retome o controle da sua história.
+            </h1>
+            <p class="text-lg text-brand-light leading-relaxed">
+                Acolhimento humanizado e terapia baseada em evidências para te ajudar a superar a ansiedade e construir uma vida com mais significado em Florianópolis.
+            </p>
+            <div class="pt-4">
+                <button onclick="Calendly.initPopupWidget({ url: 'https://calendly.com/sinapse-ai-co/30min' }); return false;" 
+                        class="bg-brand-text text-white px-8 py-4 rounded-full shadow-lg hover:bg-gray-800 transition transform hover:scale-105 uppercase text-sm tracking-widest font-semibold">
+                    Quero Agendar Minha Sessão
+                </button>
+            </div>
+            <p class="text-xs text-brand-light mt-2 flex items-center gap-2">
+                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                Agenda aberta para novos pacientes
+            </p>
+        </div>
+        <div class="md:w-1/2 relative">
+            <div class="relative w-full aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Psicóloga" class="object-cover w-full h-full hover:scale-105 transition duration-700">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-12">Você se identifica com isso?</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="p-6 bg-brand-bg rounded-xl hover:shadow-lg transition">
+                    <div class="text-3xl mb-4">🌪️</div>
+                    <h3 class="font-bold mb-2">Mente Acelerada</h3>
+                    <p class="text-sm text-brand-light">Pensamentos que não param, dificuldade para dormir e sensação constante de alerta.</p>
+                </div>
+                <div class="p-6 bg-brand-bg rounded-xl hover:shadow-lg transition">
+                    <div class="text-3xl mb-4">😶</div>
+                    <h3 class="font-bold mb-2">Medo do Julgamento</h3>
+                    <p class="text-sm text-brand-light">Deixar de fazer coisas que gosta por medo do que os outros vão pensar.</p>
+                </div>
+                <div class="p-6 bg-brand-bg rounded-xl hover:shadow-lg transition">
+                    <div class="text-3xl mb-4">🔋</div>
+                    <h3 class="font-bold mb-2">Exaustão Emocional</h3>
+                    <p class="text-sm text-brand-light">Sentir-se drenado, sem energia e com a sensação de estar "vivendo no automático".</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-6 py-20 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/3">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                 class="rounded-full w-64 h-64 object-cover mx-auto shadow-xl grayscale hover:grayscale-0 transition duration-500">
+        </div>
+        <div class="md:w-2/3 space-y-6">
+            <h2 class="text-3xl font-serif font-bold">Olá, eu sou a Dra. [Nome]</h2>
+            <p class="text-brand-light leading-relaxed">
+                Psicóloga Clínica (CRP 12/XXXXX) apaixonada por transformar vidas através do autoconhecimento. 
+                Com mais de 10 anos de experiência, meu consultório é um espaço seguro e livre de julgamentos.
+            </p>
+            <p class="text-brand-light leading-relaxed">
+                Minha abordagem é focada em resultados práticos, ajudando você a desenvolver ferramentas emocionais para lidar com os desafios do dia a dia.
+            </p>
+            <ul class="grid grid-cols-2 gap-4 text-sm font-semibold pt-4">
+                <li class="flex items-center gap-2">✓ Terapia Cognitiva</li>
+                <li class="flex items-center gap-2">✓ Especialista em Ansiedade</li>
+                <li class="flex items-center gap-2">✓ Atendimento Online</li>
+                <li class="flex items-center gap-2">✓ Atendimento Presencial</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-brand-text text-white py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-serif mb-12">Histórias Reais</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-8 rounded-2xl text-left relative">
+                    <span class="text-6xl text-brand-primary absolute -top-4 -left-2 opacity-50">"</span>
+                    <p class="italic mb-6 text-gray-300">"Comecei a terapia sem acreditar muito, mas a Dra. [Nome] mudou minha perspectiva. Hoje consigo lidar com minha ansiedade de forma muito mais leve."</p>
+                    <div class="font-bold text-brand-primary">- M.S., Paciente há 6 meses</div>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl text-left relative">
+                    <span class="text-6xl text-brand-primary absolute -top-4 -left-2 opacity-50">"</span>
+                    <p class="italic mb-6 text-gray-300">"O agendamento online facilitou minha vida. O atendimento é pontual e extremamente acolhedor. Recomendo de olhos fechados."</p>
+                    <div class="font-bold text-brand-primary">- R.L., Paciente via Google</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-3xl mx-auto">
+        <h2 class="text-3xl font-serif font-bold text-center mb-12">Perguntas Frequentes</h2>
+        <div class="space-y-4">
+            <details class="bg-white p-6 rounded-lg shadow-sm cursor-pointer group">
+                <summary class="font-bold flex justify-between items-center list-none">
+                    Vocês aceitam plano de saúde?
+                    <span class="transform group-open:rotate-180 transition">▼</span>
+                </summary>
+                <p class="mt-4 text-brand-light text-sm">Os atendimentos são particulares, mas fornecemos recibo para que você possa solicitar o reembolso junto ao seu convênio.</p>
+            </details>
+            <details class="bg-white p-6 rounded-lg shadow-sm cursor-pointer group">
+                <summary class="font-bold flex justify-between items-center list-none">
+                    Como funciona o agendamento?
+                    <span class="transform group-open:rotate-180 transition">▼</span>
+                </summary>
+                <p class="mt-4 text-brand-light text-sm">É super simples! Basta clicar no botão "Agendar", escolher o melhor horário na minha agenda e confirmar. Você receberá um link do Zoom/Meet ou o endereço do consultório.</p>
+            </details>
+        </div>
+    </section>
+
+    <footer class="bg-gray-100 py-12 text-center text-sm text-gray-500">
+        <p class="mb-4">📍 Florianópolis, SC | Atendimento Online para todo o Brasil</p>
+        <p>&copy; 2025 Dra. [Nome Sobrenome]. Todos os direitos reservados.</p>
+        <p class="mt-4 text-xs">Desenvolvido por <a href="#" class="font-bold text-brand-text">Sinapse Labs</a></p>
+    </footer>
+
+    <a href="https://wa.me/5548999999999" target="_blank" 
+       class="fixed bottom-6 right-6 z-50 bg-green-600 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition duration-300 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+    </a>
+
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</body>
+</html>
